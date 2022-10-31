@@ -19,7 +19,8 @@ export default function POSSection({ activeIndex }) {
             />
           </div>
         </div>
-        <div>
+
+        <div className="list">
           <ul>
             {products.map((product, index) => {
               return (
