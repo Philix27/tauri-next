@@ -10,13 +10,14 @@
 @import "typos";
 @import "table";
 @import "buttons";
-@import "navbar";
 @import "sidebar";
 @import "markdown";
 @import "home";
 @import "modal";
 @import "form";
 @import "wrappers";
+@import "pos";
+@import "cart";
 
 :root {
   --fontFamily: "Roboto", sans-serif;
@@ -33,4 +34,5 @@ body {
 
 .container {
   display: flex;
+  flex-direction: row;
 }

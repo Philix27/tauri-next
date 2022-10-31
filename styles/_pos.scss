@@ -1,0 +1,48 @@
+.pos {
+  // height: 100vh;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: $primaryColor;
+  .products {
+    width: 75%;
+    padding: 20px 20px;
+    .nav {
+      .input_box {
+        margin: 10px auto;
+        margin-bottom: 20px;
+        width: 50%;
+        input {
+          height: 100%;
+          width: 100%;
+          border-radius: 5px;
+          border: none;
+          background: $secondaryColor;
+          color: #fff;
+          font-weight: 400;
+          font-size: 1.6rem;
+          padding: 15px 12px;
+          /* margin: 10px 0; */
+        }
+      }
+    }
+    li {
+      background-color: #fff;
+      display: flex;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+      padding: 15px 20px;
+      margin: 10px;
+      span {
+        padding: 0 10px;
+      }
+    }
+  }
+  .cart {
+    width: 25%;
+    color: #fff;
+    li {
+      color: #fff;
+    }
+  }
+}

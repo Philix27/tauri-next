@@ -1,0 +1,17 @@
+.cart {
+  width: 25%;
+  // height: 100%;
+  background-color: $secondaryColor;
+  border-radius: 20px;
+  margin: 20px 10px;
+  box-shadow: 0 5px 10px rgba(30, 29, 29, 0.2);
+
+  ul {
+    li {
+      color: #fff;
+      border-radius: 10px;
+      // padding: 15px 20px;
+      margin: 10px;
+    }
+  }
+}

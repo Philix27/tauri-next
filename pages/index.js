@@ -8,7 +8,7 @@ export default function Index() {
   const [activeIndex, setActiveIndex] = useState(1);
 
   return (
-    <div className="wrapper">
+    <div className="container">
       <Sidebar setActiveIndex={setActiveIndex} activeIndex={activeIndex} />
       <Home activeIndex={activeIndex} />
       <POSSection activeIndex={activeIndex} />
