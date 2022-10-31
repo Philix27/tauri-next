@@ -13,17 +13,10 @@
 @import "navbar";
 @import "sidebar";
 @import "markdown";
-@import "post_page";
-@import "posts";
-@import "pharmacist";
-@import "footer";
-@import "books_list";
-@import "footer";
+@import "home";
 @import "modal";
 @import "form";
 @import "wrappers";
-@import "addAgent";
-@import "agentsList";
 
 :root {
   --fontFamily: "Roboto", sans-serif;
@@ -38,71 +31,6 @@ body {
   display: none;
 }
 
-.wrapper {
+.container {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100vh;
-  background-image: linear-gradient(
-      rgba(9, 106, 163, 0.391),
-      rgba(2, 4, 14, 0.358)
-    ),
-    url(../public/images/bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-
-  .textArea {
-    background-color: rgba(0, 0, 0, 0.598);
-    margin: 0 auto;
-    padding: 40px 40px;
-    color: #fff;
-    max-width: 35vw;
-    p {
-      padding: 15px 0;
-      line-height: 2.3rem;
-      font-weight: 400;
-    }
-  }
-  .comp {
-    padding-left: 20vw;
-    @include mobileSS {
-      padding-left: 0;
-    }
-  }
-}
-
-.specificLGA {
-  padding-left: 20vw;
-  @include mobileSS {
-    padding-left: 0;
-  }
-  h2 {
-    font-weight: 300;
-    padding-top: 30px;
-  }
-}
-
-.formsPage {
-  padding-left: 20vw;
-  @include mobileSS {
-    padding-left: 0;
-  }
-
-  .h2 {
-    font-weight: lighter;
-    font-size: small;
-  }
-}
-
-.red {
-  color: rgb(195, 8, 8);
-}
-
-.green {
-  color: rgb(6, 138, 23);
-}
-
-.icon {
-  font-size: medium;
 }

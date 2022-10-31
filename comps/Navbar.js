@@ -37,7 +37,7 @@ export default function Navbar() {
         </div>
 
         <div className="nav_start">
-          <Link href="/">
+          <Link legacyBehavior href="/">
             <a>
               <img
                 className="logo"
@@ -61,20 +61,20 @@ export default function Navbar() {
               </li>
               {user ? (
                 <li className="nav_start_list_item">
-                  <Link href="/#">
+                  <Link legacyBehavior href="/#">
                     <a className="link">{user.email}</a>
                   </Link>
                 </li>
               ) : (
                 <li className="nav_start_list_item">
-                  <Link href="/">
+                  <Link legacyBehavior href="/">
                     <a className="link">Not Signed In</a>
                   </Link>
                 </li>
               )}
               {user && (
                 <li className="nav_start_list_item">
-                  <Link href="/#">
+                  <Link legacyBehavior href="/#">
                     <a className="link" onClick={logOut}>
                       Logout
                     </a>

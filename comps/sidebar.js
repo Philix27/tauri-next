@@ -1,16 +1,9 @@
 import React from "react";
 import { useRouter } from "next/router";
-import { RiDashboardFill, RiHome5Fill } from "react-icons/ri";
-import {
-  MdOutlineSupportAgent,
-  MdLocationPin,
-  MdMyLocation,
-  MdOutlineShareLocation,
-  MdGroups,
-  MdAdminPanelSettings,
-} from "react-icons/md";
+import { RiHome5Fill } from "react-icons/ri";
+import { MdMyLocation, MdAdminPanelSettings } from "react-icons/md";
 
-export default function Sidebar() {
+export default function Sidebar({ activeIndex, setActiveIndex }) {
   const router = useRouter();
   const _path = router.pathname;
 
@@ -18,12 +11,18 @@ export default function Sidebar() {
     <>
       <div className="sidebar">
         <div className="sidebar_start">
-          <img className="logo" src="/images/logo.png" width={90} height={45} />
           <ul className="sidebar_start_list">
-            <a className="link" href="/">
+            <li className="brandName">
+              <span>
+                <RiHome5Fill />
+              </span>
+              BRAND
+            </li>
+
+            <a className="link" href="#" onClick={() => setActiveIndex(1)}>
               <li
                 className={
-                  _path == "/" ? "activeItem" : "sidebar_start_list_item"
+                  activeIndex == 1 ? "activeItem" : "sidebar_start_list_item"
                 }
               >
                 <span>
@@ -32,84 +31,23 @@ export default function Sidebar() {
                 HOME
               </li>
             </a>
-            {/* <a className="link" href="/dashboard">
+            <a className="link" href="#" onClick={() => setActiveIndex(2)}>
               <li
                 className={
-                  _path == "/dashboard"
-                    ? "activeItem"
-                    : "sidebar_start_list_item"
-                }
-              >
-                <span>
-                  <RiDashboardFill />
-                </span>
-                DASHBOARD
-              </li>
-            </a> */}
-            {/* <a className="link" href="/states">
-              <li
-                className={
-                  _path == "/states" ? "activeItem" : "sidebar_start_list_item"
-                }
-              >
-                <span>
-                  <MdLocationPin />
-                </span>
-                STATES
-              </li>
-            </a> */}
-            <a className="link" href="/lga">
-              <li
-                className={
-                  _path == "/lga" ? "activeItem" : "sidebar_start_list_item"
+                  activeIndex == 2 ? "activeItem" : "sidebar_start_list_item"
                 }
               >
                 <span>
                   <MdMyLocation />
                 </span>
-                LGAs
+                POS
               </li>
             </a>
-            {/* <a className="link" href="/">
+
+            <a className="link" href="#" onClick={() => setActiveIndex(3)}>
               <li
                 className={
-                  _path == "/wards" ? "activeItem" : "sidebar_start_list_item"
-                }
-              >
-                <span>
-                  <MdOutlineShareLocation />{" "}
-                </span>
-                WARDS
-              </li>
-            </a> */}
-            {/* <a className="link" href="/">
-              <li
-                className={
-                  _path == "/wards" ? "activeItem" : "sidebar_start_list_item"
-                }
-              >
-                <span>
-                  <MdOutlineShareLocation />{" "}
-                </span>
-                Polling Units
-              </li>
-            </a> */}
-            <a className="link" href="/agents">
-              <li
-                className={
-                  _path == "/agents" ? "activeItem" : "sidebar_start_list_item"
-                }
-              >
-                <span>
-                  <MdGroups />
-                </span>
-                AGENTS
-              </li>
-            </a>
-            <a className="link" href="/admin">
-              <li
-                className={
-                  _path == "/admin" ? "activeItem" : "sidebar_start_list_item"
+                  activeIndex == 3 ? "activeItem" : "sidebar_start_list_item"
                 }
               >
                 <span>

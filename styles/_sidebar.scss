@@ -40,21 +40,30 @@
   }
 
   .sidebar_start_list_item {
-    /* padding-top: 15px; */
-    /* padding-bottom: 5px; */
-    /* margin-bottom: 20px; */
-    /* border-bottom: #ccc solid 1px; */
-    /* background-color: #112d4e; */
-    // font-size: 2rem;
     align-items: center;
     padding: 19px 20px;
     display: block;
-    border-bottom: #112d4e solid 1px;
+    border-bottom: $secondaryColor solid 1px;
+    :hover {
+      background-color: $secondaryColor;
+    }
     span {
       padding-left: 8px;
       padding-right: 15px;
     }
   }
+
+  .brandName {
+    align-items: center;
+    padding: 19px 20px;
+    display: block;
+    border-bottom: $secondaryColor solid 1px;
+    span {
+      padding-left: 8px;
+      padding-right: 15px;
+    }
+  }
+
   .activeItem {
     padding: 19px 20px;
     align-items: center;
@@ -67,10 +76,6 @@
       padding-left: 8px;
       padding-right: 15px;
     }
-  }
-
-  .sidebar_start_list_item:hover {
-    background-color: #112d4e;
   }
 
   .sidebar_end {
@@ -92,10 +97,9 @@
 
   .link {
     color: #fff;
-  }
-
-  .link:hover {
-    background-color: #112d4e;
+    :hover {
+      background-color: $secondaryColor;
+    }
   }
 
   .bars,

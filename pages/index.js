@@ -1,48 +1,17 @@
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/router";
+import Sidebar from "../comps/Sidebar";
+import Home from "../comps/Home";
+import POSSection from "../comps/pos";
 
-export default function Home() {
+export default function Index() {
+  const [activeIndex, setActiveIndex] = useState(1);
+
   return (
     <div className="wrapper">
-      <div className="section formsPage">
-        <form action="#" className="form">
-          {/* <form action="/api/auth/login" className="form" method="GET"> */}
-          <div className="input_box">
-            <label htmlFor="form-email" className="label">
-              Email
-            </label>
-            <input
-              type="text"
-              id="form-email"
-              placeholder="example@gmail.com"
-              name="email"
-              // value={user.email}
-              // onChange={handleChange}
-            />
-          </div>
-          <div className="input_box">
-            <label htmlFor="form-password" className="label">
-              Password
-            </label>
-            <input
-              type="password"
-              id="form-password"
-              placeholder="Password"
-              name="password"
-              // value={user.password}
-              // onChange={handleChange}
-            />
-          </div>
-          <div className="buttons">
-            <input
-              type="submit"
-              value="Login"
-              // onClick={handleSubmit}
-              className="btn"
-            />
-          </div>
-        </form>
-      </div>
+      <Sidebar setActiveIndex={setActiveIndex} activeIndex={activeIndex} />
+      <Home activeIndex={activeIndex} />
+      <POSSection activeIndex={activeIndex} />
     </div>
   );
 }
