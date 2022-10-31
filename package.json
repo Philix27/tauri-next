@@ -11,9 +11,14 @@
     "tauri": "tauri"
   },
   "dependencies": {
+    "@tauri-apps/api": "^1.1.0",
+    "framer-motion": "^7.6.2",
     "next": "13.0.0",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-icons": "^4.6.0",
+    "sass": "^1.55.0",
+    "uuid": "^9.0.0"
   },
   "devDependencies": {
     "@tauri-apps/cli": "^1.1.1",
