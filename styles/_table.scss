@@ -30,16 +30,18 @@
 
   table tr {
     border-bottom: 1px solid #dddddd;
+    background-color: $primaryColor;
+    color: #fff;
   }
 
   table tr:hover {
-    background-color: $primaryColor;
-    color: #fff;
+    background-color: #fff;
+    color: $secondaryColor;
     font-weight: 600;
   }
 
   tr:nth-of-type(even) {
-    background-color: #f3f3f3;
+    background-color: $secondaryColor;
   }
 
   tr:last-of-type {
@@ -47,32 +49,5 @@
   }
   td {
     padding: 10px 12px;
-  }
-
-  input {
-    height: 100%;
-    width: 50%;
-    border-radius: 5px;
-    border: none;
-    // color: #fff;
-    // background: $primaryColor;
-    font-weight: 400;
-    font-size: 1.6rem;
-    padding: 15px 12px;
-    margin: 20px 0;
-    text-align: center;
-    @include mobileSS {
-      width: 75%;
-    }
-  }
-  .input {
-    margin: 0 auto;
-    text-align: center;
-  }
-  img {
-    max-height: 40px;
-    max-width: 40px;
-    border-radius: 10px;
-    object-fit: cover;
   }
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 export default function AdminSection({ activeIndex }) {
   return (
@@ -6,9 +7,11 @@ export default function AdminSection({ activeIndex }) {
       <div className="card">
         <h3>Add User</h3>
       </div>
-      <div className="card">
-        <h3>View User</h3>
-      </div>
+      <Link href="/users">
+        <div className="card">
+          <h3>View User</h3>
+        </div>
+      </Link>
       <div className="card">
         <h3>Add Products</h3>
       </div>

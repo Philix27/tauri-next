@@ -1,9 +1,8 @@
 import React from "react";
-import products from "../../data/products";
+import products from "../../data/products.json";
 import Cart from "./Cart";
 
 export default function POSSection({ activeIndex }) {
-  // console.log(products);
   return (
     <div className={activeIndex == 2 ? "pos" : "none"}>
       <div className="products">

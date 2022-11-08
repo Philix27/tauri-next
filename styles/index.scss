@@ -19,6 +19,8 @@
 @import "pos";
 @import "cart";
 @import "admin";
+@import "table";
+@import "users";
 
 :root {
   --fontFamily: "Roboto", sans-serif;
@@ -29,6 +31,7 @@ body {
   font-family: var(--fontFamily);
   height: 100vh;
   margin: 0;
+  background-color: $primaryColor;
   // overflow: hidden;
 }
 

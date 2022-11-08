@@ -10,7 +10,7 @@ export default function Layout(props) {
       <Head>
         <title>PIMS </title>
         <meta name="PIMS" content="Created by Eligbue" />
-        <link rel="icon" href="/images/logo.png" />
+        {/* <link rel="icon" href="/images/logo.png" /> */}
       </Head>
       {/* <Sidebar /> */}
       {props.children}
